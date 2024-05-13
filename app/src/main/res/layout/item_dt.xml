@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/itemdt_image"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:src="@drawable/baseline_perm_media_24" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="7">
+            <TextView
+                android:id="@+id/itemdt_ten"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Ten San Pham"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/itemdt_gia"
+                android:text="Gia: 25000000d"
+                android:textSize="16sp"
+                android:textColor="#FF5252"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/itemdt_mota"
+                android:text="Mo ta: "
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
